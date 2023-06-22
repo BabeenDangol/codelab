@@ -65,6 +65,9 @@ class StackPage extends StatelessWidget {
               ],
             ),
           ),
+          Container(
+            child: Text("Hero"),
+          ),
         ],
       ),
     );

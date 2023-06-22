@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:transition/Page1.dart';
+import 'package:transition/expansionpanel.dart';
 import 'package:transition/page2.dart';
 import 'package:transition/page3.dart';
 import 'package:transition/page4.dart';
@@ -100,7 +101,7 @@ class _HomeState extends State<Home> {
                 },
               ),
               ListTile(
-                leading: Icon(Icons.settings),
+                leading: Icon(Icons.stacked_bar_chart_sharp),
                 title: Text("Stack"),
                 onTap: () {
                   Navigator.push(
@@ -110,6 +111,7 @@ class _HomeState extends State<Home> {
                       ));
                 },
               ),
+
               //Used data table Widget in this page
               ListTile(
                 leading: Icon(Icons.data_array),
@@ -119,6 +121,17 @@ class _HomeState extends State<Home> {
                       context,
                       MaterialPageRoute(
                         builder: (context) => DataTablePage(),
+                      ));
+                },
+              ),
+              ListTile(
+                leading: Icon(Icons.settings),
+                title: Text("ExpansionPanel"),
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ExpansionPanelScreen(),
                       ));
                 },
               ),
